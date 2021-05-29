@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- Icons from  Boxicons-->
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <!-- easily animating elements using scrollreveal-->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- header-->
+    <section class="about-header">
+        <nav>
+            <a href="home.html"><img src="images/ Logo.png" alt="Travel Buddy Logo"></a>
+            <div class= "nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="nextadv.html"> Next Adventures</a></li>
+                    <li><a href="photogall.html">Photo Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    
+    <!--about us-->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We Are The Most Trusted Travel Organization</h1>
+                <p>This website doesnt exist so heres a joke. It's always good to bring a slower friend with you on a hike. 
+                If you happen to come across bears, the whole group doesn't have to worry.
+                Only the slowest in the group do. That was the lesson they were about to learn that day. 
+                </p>
+                <a href="home.html" class="learn-btn blue-btn">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="images/aboutUs.jpg" alt="image of people at airport">
+            </div>
+        </div>
+    </section>
+    
+    <!-----Footer----->
+    <section class="footer">
+        <div class= "icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fas fa-heart"></i> by Rashel </p>
+    </section>
+
+
+    <!---JS toggle menu--->
+    <script>
+        var navLinks= document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>    
+</body>
+</html>       

@@ -1,0 +1,101 @@
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo gallery </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+  <link rel="stylesheet" href="./css/imggal.css">
+</head>
+
+<body>
+    <section class="nav-header">
+        <nav>
+            <a href="home.html"><img src="images/ Logo.png" alt="Travel Buddy Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="nextadv.html"> Next Adventures</a></li>
+                    <li><a href="photogall.html">Photo Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+   </section>
+  <section>
+    <div class="container">
+      <div class="header">
+        <h1 class="logo">Travel Buddy's Gallery</h1>
+        <form>
+          <input type="text" placeholder="Search">
+          <ion-icon name="search-outline"></ion-icon>
+        </form>
+      </div>
+      <div class="gallery">
+      <div>
+        <a class="load-more data-img='curated">Load More</a>
+      </div>
+        <!-- <div class="item">
+          <a href="#">
+            <img src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&fit=crop&h=250&w=360" alt="image">
+            <h3>Photographer Name</h3>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="https://images.pexels.com/photos/7148680/pexels-photo-7148680.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="image">
+            <h3>Photographer Name</h3>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="https://images.pexels.com/photos/7148412/pexels-photo-7148412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="image">
+            <h3>Photographer Name</h3>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="https://images.pexels.com/photos/8021093/pexels-photo-8021093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="image">
+            <h3>Photographer Name</h3>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="https://images.pexels.com/photos/1427744/pexels-photo-1427744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="image">
+            <h3>Photographer Name</h3>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="https://images.pexels.com/photos/1020016/pexels-photo-1020016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="image">
+            <h3>Photographer Name</h3>
+          </a>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  
+  
+  <!--JS toggle menu--->
+     <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

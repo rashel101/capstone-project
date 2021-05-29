@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- Icons from  Boxicons-->
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <!-- easily animating elements using scrollreveal-->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- header-->
+    <section class="header">
+        <nav>
+            <a href="home.html"><img src="images/ Logo.png" alt="Travel Buddy Logo"></a>
+            <div class= "nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="nextadv.html"> Next Adventures</a></li>
+                    <li><a href="photogall.html">Photo Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <div class="front-text">
+        <h1 text-align:left;>Travel Buddies <br> Blog</h1>
+    </div>
+    
+    
+    
+<!-----blog page----->  
+    <section class='blog-stuff'>
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/taiwan-tour-guide-gordon-3.jpg" alt="">
+                <h2>Special Guides and What They Do</h2>
+                <p>
+                    Tour Guides are responsible for helping people to visit unfamiliar areas. 
+                    They usually make special trips with groups of tourists in order to show them 
+                    important places of cities. Their work is very useful for visitors
+                     who are for the first time in some areas, because these professionals 
+                    are very knowledgeable and provide valuable information to people. 
+                    They may work in travel agencies or 
+                </p>
+                <p>Tom has become a favorite of our tour guides and I think this
+                    picture captures his personality perfectly. Toms next trip will
+                    also be in Taiwan where he's made tons of friends. So much so 
+                    that he knows all the hot local spots. Todays blog is in
+                    apreciation for his awesome work.
+                </p>
+                <br>
+                <p>
+                    Our Tour guides are trained for each place they visit 
+                    and most of the time are chosen based on language, education,
+                    and travel experiences. Our companies goal is to make everyone 
+                    comfortable.
+
+                </p>
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea row="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="learn-btn ">POST </button>
+                    </form>
+                </div>
+
+
+
+            </div>
+            <div class="blog-right">
+                <h3>Categories</h3>
+                <div>
+                    <span>Amazing Tours</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Ridiculous Land-Marks</span>
+                    <span>53</span>
+                </div>
+                <div>
+                    <span>Fun in the Sun</span>
+                    <span>40</span>
+                </div>
+                <div>
+                    <span>Breath of Fresh Air</span>
+                    <span>32</span>
+                </div>
+                <div>
+                    <span>Employee apreciation </span>
+                    <span>26</span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+      
+    
+<!-----Footer----->
+    <section class="footer">
+        <div class= "icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fas fa-heart"></i> by Rashel </p>
+    </section>
+
+
+
+    <!---JS toggle menu--->
+    <script>
+        var navLinks= document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>    
+</body>
+</html>
